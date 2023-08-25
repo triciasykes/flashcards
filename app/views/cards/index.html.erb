@@ -1,0 +1,9 @@
+<legend>Vocabularly</legend>
+<%= form_tag import_cards_path, method: :post, multipart: true do %> 
+  <div class="form-group">
+    <%= file_field_tag :file, class: '' %>
+  </div>
+  <div class="form-group">
+    <%= submit_tag 'Import CSV', class: 'btn btn-info' %>
+  </div>
+<% end %>
